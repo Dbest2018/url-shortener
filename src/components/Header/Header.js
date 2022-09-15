@@ -1,4 +1,5 @@
 import React from "react";
+import { FiMenu } from "react-icons/fi";
 import "./Header.css";
 import logo from "../../images/logo.svg";
 
@@ -18,6 +19,9 @@ const Header = () => {
       <div className="header__right">
         <div className="right-login">Login</div>
         <div className="right-signup">Sign Up</div>
+      </div>
+      <div className="mobile-nav">
+        <FiMenu />
       </div>
     </div>
   );
