@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Stats from "./components/Stats/Stats";
 import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
+import Shortener from "./components/Shortener/Shortener";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Hero />
       </div>
       <div className="app__main">
-        <div className="main-shortener">{/* Shortener  */}</div>
+        <div className="main-shortener">
+          <Shortener />
+        </div>
         <div className="main-stats">
           <Stats />
         </div>
