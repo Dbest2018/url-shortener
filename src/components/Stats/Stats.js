@@ -26,21 +26,23 @@ const Stats = () => {
             mean a thing. Branded links help instill confidence in your content.
           </div>
         </div>
+        <div className="green-line"></div>
         <div className="dashboard">
           <div className="dashboard-image">
             <img src={records} alt="brand" />
           </div>
-          <div className="dashboard-title">Brand Recognition</div>
+          <div className="dashboard-title">Detailed Records</div>
           <div className="dashboard-text">
             Gain insights into who is clicking your links. Knowing when and
             where people engage with your content helps inform better decisions.
           </div>
         </div>
+        <div className="green-line"></div>
         <div className="dashboard">
           <div className="dashboard-image">
             <img src={custom} alt="brand" />
           </div>
-          <div className="dashboard-title">Brand Recognition</div>
+          <div className="dashboard-title">Fully Customizable</div>
           <div className="dashboard-text">
             Improve brand awareness and content discoverability through
             customizable links, supercharging audience engagement.

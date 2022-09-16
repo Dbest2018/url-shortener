@@ -14,6 +14,7 @@
 
 .app__main {
   background-color: rgba(128, 128, 128, 0.15);
+  padding-bottom: 3rem;
 }
 .main-shortener {
   position: relative;
