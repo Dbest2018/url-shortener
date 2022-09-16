@@ -9,28 +9,28 @@ import instagram from "../../images/icon-instagram.svg";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer__logo">
-        <img src={logo} alt="footer logo" />
+      <div>
+        <img className="footer__logo" src={logo} alt="footer logo" />
       </div>
       <div className="footer__info">
         <div className="info__item">
           <div className="item-title">Features</div>
-          <div>Link Shortening</div>
-          <div>Branded Links</div>
-          <div>Analytics</div>
+          <div className="item-text">Link Shortening</div>
+          <div className="item-text">Branded Links</div>
+          <div className="item-text">Analytics</div>
         </div>
         <div className="info__item">
           <div className="item-title">Resources</div>
-          <div>Blog</div>
-          <div>Developers</div>
-          <div>Support</div>
+          <div className="item-text">Blog</div>
+          <div className="item-text">Developers</div>
+          <div className="item-text">Support</div>
         </div>
         <div className="info__item">
           <div className="item-title">Company</div>
-          <div>About</div>
-          <div>Our Team</div>
-          <div>Careers</div>
-          <div>Contact</div>
+          <div className="item-text">About</div>
+          <div className="item-text">Our Team</div>
+          <div className="item-text">Careers</div>
+          <div className="item-text">Contact</div>
         </div>
       </div>
       <div className="footer__icons">

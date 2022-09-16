@@ -1,6 +1,5 @@
 .app__header,
-.app__main,
-.app__footer {
+.app__main {
   padding: 0 1rem;
 }
 .app__hero {

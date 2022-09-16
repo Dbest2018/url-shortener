@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--vdBlue);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer__logo {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+    hue-rotate(288deg) brightness(102%) contrast(102%);
+  margin: 1rem;
+}
+.info__item {
+  margin: 2rem;
+}
+.item-title {
+  margin: 1rem;
+}
+.item-text {
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  margin: 1rem;
+  cursor: pointer;
+}
