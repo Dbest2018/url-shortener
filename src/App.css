@@ -11,3 +11,11 @@
 .app__header {
   padding-top: 1rem;
 }
+
+.app__main {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+.main-shortener {
+  position: relative;
+  bottom: 60px;
+}
