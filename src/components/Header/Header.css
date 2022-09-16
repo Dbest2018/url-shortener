@@ -2,9 +2,16 @@
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .left-nav,
 .header__right {
   display: none;
+}
+.nav-icon {
+  color: var(--grayishViolet);
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
 }

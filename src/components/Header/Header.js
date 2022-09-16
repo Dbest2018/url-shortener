@@ -21,7 +21,7 @@ const Header = () => {
         <div className="right-signup">Sign Up</div>
       </div>
       <div className="mobile-nav">
-        <FiMenu />
+        <FiMenu className="nav-icon" />
       </div>
     </div>
   );
