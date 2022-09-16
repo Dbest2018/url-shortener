@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   flex-direction: column-reverse;
+  overflow: hidden;
 }
 
 .hero__info {
@@ -33,5 +34,5 @@
 }
 
 .hero__image {
-  width: 100%;
+  width: 135%;
 }
