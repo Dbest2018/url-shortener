@@ -1,13 +1,12 @@
-.app__header,
+.app__header {
+  margin: 1rem;
+}
+
 .app__main {
   padding: 0 1rem;
 }
 .app__hero {
   padding-left: 1rem;
-}
-
-.app__header {
-  padding-top: 1rem;
 }
 
 .app__main {
@@ -17,4 +16,13 @@
 .main-shortener {
   position: relative;
   bottom: 60px;
+}
+
+@media (min-width: 750px) {
+  .app__header {
+    margin: 3rem;
+  }
+  .app__main {
+    margin: 0 5rem;
+  }
 }

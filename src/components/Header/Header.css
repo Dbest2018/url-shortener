@@ -1,7 +1,15 @@
 .header {
-  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+}
+
+.left-logo {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -14,4 +22,30 @@
   cursor: pointer;
   width: 35px;
   height: 35px;
+}
+.right-signup {
+  cursor: pointer;
+  color: white;
+  background-color: var(--cyan);
+  padding: 0.35rem 1rem;
+  border-radius: 1.25rem;
+}
+
+@media (min-width: 750px) {
+  .left-nav,
+  .header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  .nav-item,
+  .right-login {
+    cursor: pointer;
+    margin-right: 1rem;
+    color: var(--dviolet);
+  }
+  .mobile-nav {
+    display: none;
+  }
 }
