@@ -36,3 +36,32 @@
 .hero__image {
   width: 135%;
 }
+
+@media (min-width: 850px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7rem;
+  }
+  .hero__info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero__info,
+  .info-title,
+  .info-text {
+    text-align: start;
+  }
+  .info-title {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .info-text {
+    width: 70%;
+  }
+  .hero__image {
+    width: 120%;
+  }
+}
