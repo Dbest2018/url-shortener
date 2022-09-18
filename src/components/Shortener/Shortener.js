@@ -4,13 +4,11 @@ import "./Shortener.css";
 const Shortener = () => {
   return (
     <div className="shortener">
-      <div className="shortener-test">
-        <input
-          className="shortener__input"
-          type="text"
-          placeholder="Shorten a link here..."
-        />
-      </div>
+      <input
+        className="shortener__input"
+        type="text"
+        placeholder="Shorten a link here..."
+      />
       <div className="shortener__button">Shorten It!</div>
     </div>
   );
