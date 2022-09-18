@@ -27,7 +27,7 @@ const Stats = () => {
           </div>
         </div>
         <div className="green-line"></div>
-        <div className="dashboard">
+        <div className="dashboard slide">
           <div className="dashboard-image">
             <img src={records} alt="brand" />
           </div>
@@ -38,7 +38,7 @@ const Stats = () => {
           </div>
         </div>
         <div className="green-line"></div>
-        <div className="dashboard">
+        <div className="dashboard slide-one">
           <div className="dashboard-image">
             <img src={custom} alt="brand" />
           </div>
