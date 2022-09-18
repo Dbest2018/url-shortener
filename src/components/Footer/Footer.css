@@ -10,7 +10,7 @@
   margin: 1rem;
 }
 .info__item {
-  margin: 2rem;
+  margin: 1rem;
 }
 .item-title {
   margin: 1rem;
@@ -26,4 +26,23 @@
 .icon {
   margin: 1rem;
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__info {
+    display: flex;
+  }
+  .info__item {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    padding: 5rem;
+  }
 }
