@@ -23,7 +23,7 @@ function App() {
         <div className="main-shortener">
           <Shortener urls={urls} setUrls={setUrls} />
         </div>
-        {urls.length > 0 && (
+        {urls.length > 1 && (
           <div className="main-short">
             {urls.map((url, index) => (
               <Short url={url} key={index} />
