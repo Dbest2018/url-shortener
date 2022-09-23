@@ -9,7 +9,12 @@ import Shortener from "./components/Shortener/Shortener";
 import Short from "./components/Short/Short";
 
 function App() {
-  const [urls, setUrls] = useState([{ longUrl: "", shortUrl: "" }]);
+  const [urls, setUrls] = useState([
+    {
+      longUrl: "https://www.frontend.mentor.io",
+      shortUrl: "https://reLink/k4IKyk",
+    },
+  ]);
 
   return (
     <div className="app">
@@ -23,7 +28,7 @@ function App() {
         <div className="main-shortener">
           <Shortener urls={urls} setUrls={setUrls} />
         </div>
-        {urls.length > 1 && (
+        {urls.length > 0 && (
           <div className="main-short">
             {urls.map((url, index) => (
               <Short url={url} key={index} />

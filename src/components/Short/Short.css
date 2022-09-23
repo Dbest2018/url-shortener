@@ -1,0 +1,48 @@
+.short {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.short__long {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.short__short {
+  color: var(--cyan);
+  margin: 1rem 0;
+}
+
+.short__button {
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: var(--cyan);
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 850px) {
+  .short {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .short__long {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .short__short {
+    margin: 0;
+  }
+  .short__right {
+    display: flex;
+    align-items: center;
+  }
+  .short__button {
+    margin-left: 1rem;
+    padding: 0.5rem 1.75rem;
+  }
+}
