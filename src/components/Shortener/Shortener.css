@@ -16,8 +16,8 @@
   box-sizing: border-box;
   width: 90%;
   border-radius: 0.25rem;
-  padding: 1rem;
   margin-bottom: 1rem;
+  padding: 1rem;
   color: var(--grayishViolet);
   border-radius: inherit;
   outline: none;

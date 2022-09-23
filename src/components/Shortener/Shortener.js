@@ -1,11 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Shortener.css";
 
 const Shortener = ({ urls, setUrls }) => {
   const [url, setUrl] = useState("");
+
+  useEffect(() => {
+    setUrl("");
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(url);
+    if (url === "") {
+      console.log("Please add link");
+      return;
+    }
     const shortUrl = url.concat(" is shortened");
     const newUrl = {
       longUrl: url,
