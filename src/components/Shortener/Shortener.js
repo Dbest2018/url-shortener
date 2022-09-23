@@ -12,7 +12,6 @@ const Shortener = ({ urls, setUrls }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(url);
     if (url === "") {
       setError(true);
       return;
