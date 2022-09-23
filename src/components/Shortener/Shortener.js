@@ -3,16 +3,18 @@ import "./Shortener.css";
 
 const Shortener = ({ urls, setUrls }) => {
   const [url, setUrl] = useState("");
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     setUrl("");
+    setError(false);
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(url);
     if (url === "") {
-      console.log("Please add link");
+      setError(true);
       return;
     }
     const shortUrl = url.concat(" is shortened");
@@ -24,16 +26,22 @@ const Shortener = ({ urls, setUrls }) => {
     setUrls((prevUrls) => [...prevUrls, newUrl]);
   };
   const handleChange = (e) => {
+    if (error) {
+      setError(false);
+    }
     setUrl(e.target.value);
   };
   return (
     <div className="shortener">
-      <input
-        className="shortener__input"
-        type="text"
-        onChange={handleChange}
-        placeholder="Shorten a link here..."
-      />
+      <div className="shortener__left">
+        <input
+          className="shortener__input"
+          type="text"
+          onChange={handleChange}
+          placeholder="Shorten a link here..."
+        />
+        {error && <div className="error">Please add a link</div>}
+      </div>
       <div className="shortener__button" onClick={handleSubmit}>
         Shorten It!
       </div>

@@ -12,11 +12,15 @@
   border-radius: 0.75rem;
 }
 
+.shortener__left {
+  border-radius: 0.25rem;
+  width: 90%;
+}
+
 .shortener__input {
   box-sizing: border-box;
-  width: 90%;
+  width: 100%;
   border-radius: 0.25rem;
-  margin-bottom: 1rem;
   padding: 1rem;
   color: var(--grayishViolet);
   border-radius: inherit;
@@ -26,8 +30,16 @@
 .shortener__input::placeholder {
   color: var(--grayishViolet);
 }
+.error {
+  align-self: flex-start;
+  color: red;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+  font-style: italic;
+}
 .shortener__button {
   width: 90%;
+  margin-top: 1rem;
   text-align: center;
   color: white;
   padding: 0.5rem;
@@ -46,7 +58,7 @@
     align-items: center;
     padding: 2rem;
   }
-  .shortener__input {
+  .shortener__left {
     flex: 4;
     margin-right: 1rem;
     margin-bottom: 0;
@@ -55,5 +67,6 @@
   .shortener__button {
     flex: 1;
     padding: 0.75rem;
+    margin-top: 0;
   }
 }
