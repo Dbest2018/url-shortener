@@ -10,7 +10,7 @@ const Short = ({ url }) => {
   };
   const handleClick = () => {
     navigator.clipboard.writeText(url.shortUrl);
-    setButtonText("Copied");
+    setButtonText("Copied!");
     setIsCopied(true);
   };
   return (
