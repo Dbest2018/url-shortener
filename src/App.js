@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -8,13 +8,22 @@ import Footer from "./components/Footer/Footer";
 import Shortener from "./components/Shortener/Shortener";
 import Short from "./components/Short/Short";
 
+const getLocalStorage = () => {
+  let urls = localStorage.getItem("urls");
+
+  if (urls) {
+    return JSON.parse(localStorage.getItem("urls"));
+  } else {
+    return [];
+  }
+};
+
 function App() {
-  const [urls, setUrls] = useState([
-    {
-      longUrl: "https://www.frontend.mentor.io",
-      shortUrl: "https://reLink/k4IKyk",
-    },
-  ]);
+  const [urls, setUrls] = useState(getLocalStorage());
+
+  useEffect(() => {
+    localStorage.setItem("urls", JSON.stringify(urls));
+  }, [urls]);
 
   return (
     <div className="app">
