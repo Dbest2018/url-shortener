@@ -16,13 +16,22 @@ const Shortener = ({ urls, setUrls }) => {
       setError(true);
       return;
     }
-    const shortUrl = url.concat(" is shortened");
-    const newUrl = {
-      longUrl: url,
-      shortUrl,
+    let shortUrl = "";
+    const shortenUrl = async () => {
+      const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
+      const data = await res.json();
+      shortUrl = data.result.full_short_link;
+      const newUrl = {
+        longUrl: url,
+        shortUrl,
+      };
+      setUrls((prevUrls) => [...prevUrls, newUrl]);
     };
-    console.log(newUrl.longUrl, newUrl.shortUrl);
-    setUrls((prevUrls) => [...prevUrls, newUrl]);
+    try {
+      shortenUrl();
+    } catch (e) {
+      console.log("Unable to shorten url, because ", e);
+    }
   };
   const handleChange = (e) => {
     if (error) {
