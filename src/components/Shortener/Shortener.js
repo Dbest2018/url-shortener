@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./Shortener.css";
 
 const Shortener = ({ urls, setUrls }) => {
-  const [url, setUrl] = useState("");
+  // change the space to empty string and see what happens :)
+  const [url, setUrl] = useState(" ");
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ const Shortener = ({ urls, setUrls }) => {
         shortUrl,
       };
       setUrls((prevUrls) => [...prevUrls, newUrl]);
+      setUrl("");
     };
     try {
       shortenUrl();
@@ -45,6 +47,7 @@ const Shortener = ({ urls, setUrls }) => {
         <input
           className="shortener__input"
           type="text"
+          value={url}
           onChange={handleChange}
           placeholder="Shorten a link here..."
         />
