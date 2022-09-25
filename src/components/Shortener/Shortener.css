@@ -38,6 +38,7 @@
   font-style: italic;
 }
 .shortener__button {
+  cursor: pointer;
   width: 90%;
   margin-top: 1rem;
   text-align: center;
