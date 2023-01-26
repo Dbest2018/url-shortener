@@ -16,11 +16,11 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 ### Screenshot
 
-#### Mobile layout
+#### Mobile View
 
 ![](./public/design/mobile-design.jpg)
 
-#### Desktop layout
+#### Desktop View
 
 ![](./public/design/desktop-design.jpg)
 
